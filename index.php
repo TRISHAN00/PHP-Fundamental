@@ -24,6 +24,9 @@
 
         // Variable with global scope:
     $x = 5; // this is a global variable
+    $y = 10;
+
+    
 
     function myTest() {
         // get x value in function
@@ -33,7 +36,7 @@
         echo "<p>I current serial number is $x</p>";
     }
 
-    myTest();
+    // myTest();
 
 
     function localTest() {
@@ -41,7 +44,7 @@
         echo "<p>this y value is in a local scope of a function called $y</p>";
     }
 
-    localTest();
+    // localTest();
 
 
     $name = "Trishan";
@@ -54,7 +57,19 @@
         global $name, $age, $country, $language, $job, $company_name;
         echo "<p>My name is $name and age is $age. I am from $country. I work at a company name is $company_name as a $job. </p>";
     }
-    myDetails();
+    // myDetails();
+
+    
+    // global value in a array
+    function scopeArray() {
+       echo $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
+    }
+    scopeArray();
+
+    
+
+    
+
 
 
     ?>
