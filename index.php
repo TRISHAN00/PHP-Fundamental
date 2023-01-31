@@ -113,7 +113,72 @@
 
 
     // Object
+    class Car {
+        public $color;
+        public $model;
+        public function __construct($color, $model) {
+            $this->color = $color;
+            $this->model = $model;
+        }
+        public function message() {
+            return "My car is a " . $this->color . " " . $this->model . "!";
+        }
+    }
+ 
 
+
+
+    $myCar = new Car("Black", "10a");
+
+    echo "<br/>";
+    echo $myCar -> message();
+
+    echo "<br/>";
+    $mySecondCar = new Car("White", "BMW");
+    echo "<br/>";
+    echo $mySecondCar -> message();
+
+
+    //mobile class
+    class Mobile {
+        public $brand;
+        public $model;
+        public function __construct($brand, $model) {
+            $this->brand = $brand;
+            $this->model = $model;
+        }
+        public function message() {
+            return "My choice of phone brand name is " . $this->brand . " " . $this->model;
+        }
+    }
+
+    $myMobile = new Mobile('MI', 'note 7');
+    echo $myMobile->message();
+
+
+    // Home color
+    class Home {
+        public $color;
+        public $location;
+        public function __construct($color, $location) {
+            $this->color = $color;
+            $this->location = $location;
+        }
+
+        public function message() {
+            return 'My home location is ' . $this->location . ' house color is ' . $this->color;
+        }
+    }
+
+    echo "</br>";
+
+    $homeOne = new Home('red', 'green road');
+    // echo $homeOne->message(); 
+
+    $str = "Hello PHP Lovely Language";
+    echo strlen($str);
+    echo "<br/>";
+    echo str_word_count($str);
 
     ?>
 </body>
