@@ -23,7 +23,7 @@
         
 
         // Variable with global scope:
-    $x = 5; // this is a global variable
+    $x = 5; // this is a global Variable
     $y = 10;
 
     
@@ -64,12 +64,55 @@
     function scopeArray() {
        echo $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y'];
     }
-    scopeArray();
+    // scopeArray();
 
-    
 
-    
+    // Static Functions
+    function funcStatic() {
+        static $a = 66;
+        echo $a;
+        $a++;
+    }
 
+
+
+//    funcStatic();
+
+//    funcStatic();
+//    funcStatic();
+//    funcStatic();
+//    funcStatic();
+
+
+
+    print "<p>this is from print</p>";
+    print "<h1>this number is $x</h1>";
+
+
+    print "<h2> hello " . $x . "</h2>";
+
+
+    $number = 11;
+    var_dump($number); //Integer
+
+
+    $numberFloat = 13.4;
+    echo "</br>";
+    var_dump($numberFloat); //Floating Number
+
+
+    $q = true;
+    $r = false; // both are bolean value
+
+
+    echo "<br>";
+
+    $student_names = array('trishan', 'rishan', 'salam');
+
+    var_dump ($student_names);
+
+
+    // Object
 
 
     ?>
