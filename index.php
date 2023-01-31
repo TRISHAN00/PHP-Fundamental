@@ -44,6 +44,19 @@
     localTest();
 
 
+    $name = "Trishan";
+    $age = 12;
+    $country = "Bangladesh";
+    $language = "Bangla";
+    $job = "Wordpress Developer Intern";
+    $company_name = "Dcastalia";
+    function myDetails() {
+        global $name, $age, $country, $language, $job, $company_name;
+        echo "<p>My name is $name and age is $age. I am from $country. I work at a company name is $company_name as a $job. </p>";
+    }
+    myDetails();
+
+
     ?>
 </body>
 </html>
